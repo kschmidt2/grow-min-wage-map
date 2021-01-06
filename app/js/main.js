@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         plotOptions: {
             series: {
-                enableMouseTracking: false,
+                // enableMouseTracking: false,
                 dataLabels: {
                     enabled: true,
                     format: '{point.hc-a2}',
@@ -61,16 +61,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 name: '$7.25'
             }, {
                 from: 7.26,
-                to: 8.99,
+                to: 9.99,
                 color: '#bceaa3',
                 name: '$7.26-$8.99'
             }, {
-                from: 9,
-                to: 10.99,
+                from: 10,
+                to: 11.99,
                 color: '#53b324',
                 name: '$9.00-$10.99'
             }, {
-                from: 11,
+                from: 12,
                 color: '#15A77B',
                 name: '$11.00+'
             }]
@@ -83,70 +83,76 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'South',
                 x: 6,
                 y: 7,
-                value: 7.25
+                value: 7.25,
             }, {
                 'hc-a2': 'AK',
                 name: 'Alaska',
                 region: 'West',
                 x: 0,
                 y: 0,
-                value: 9.89
+                value: 10.34,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'AZ',
                 name: 'Arizona',
                 region: 'West',
                 x: 5,
                 y: 3,
-                value: 11
+                value: 12.15,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'AR',
                 name: 'Arkansas',
                 region: 'South',
                 x: 5,
                 y: 6,
-                value: 9.25
+                value: 11,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'CA',
                 name: 'California',
                 region: 'West',
                 x: 5,
                 y: 2,
-                value: 12
+                value: 14,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'CO',
                 name: 'Colorado',
                 region: 'West',
                 x: 4,
                 y: 3,
-                value: 11.10
+                value: 12.32,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'CT',
                 name: 'Connecticut',
                 region: 'Northeast',
                 x: 3,
                 y: 11,
-                value: 10.10
+                value: 12
             }, {
                 'hc-a2': 'DE',
                 name: 'Delaware',
                 region: 'South',
                 x: 4,
                 y: 9,
-                value: 8.75
+                value: 9.25
             }, {
                 'hc-a2': 'DC',
                 name: 'District of Columbia',
                 region: 'South',
                 x: 4,
                 y: 10,
-                value: 14
+                value: 15
             }, {
                 'hc-a2': 'FL',
                 name: 'Florida',
                 region: 'South',
                 x: 8,
                 y: 8,
-                value: 8.46
+                value: 8.65,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'GA',
                 name: 'Georgia',
@@ -174,7 +180,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'Midwest',
                 x: 3,
                 y: 6,
-                value: 8.25
+                value: 11,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'IN',
                 name: 'Indiana',
@@ -216,35 +223,39 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'Northeast',
                 x: 0,
                 y: 11,
-                value: 11
+                value: 12.15,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'MD',
                 name: 'Maryland',
                 region: 'South',
                 x: 4,
                 y: 8,
-                value: 10.10
+                value: 11.75,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'MA',
                 name: 'Massachusetts',
                 region: 'Northeast',
                 x: 2,
                 y: 10,
-                value: 12
+                value: 13.50,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'MI',
                 name: 'Michigan',
                 region: 'Midwest',
                 x: 2,
                 y: 7,
-                value: 9.45
+                value: 9.65
             }, {
                 'hc-a2': 'MN',
                 name: 'Minnesota',
                 region: 'Midwest',
                 x: 2,
                 y: 4,
-                value: 9.86
+                value: 10.08,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'MS',
                 name: 'Mississippi',
@@ -258,14 +269,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'Midwest',
                 x: 4,
                 y: 5,
-                value: 8.6
+                value: 10.30,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'MT',
                 name: 'Montana',
                 region: 'West',
                 x: 2,
                 y: 2,
-                value: 8.50
+                value: 8.75,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'NE',
                 name: 'Nebraska',
@@ -279,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'West',
                 x: 4,
                 y: 2,
-                value: 8.25
+                value: 9
             }, {
                 'hc-a2': 'NH',
                 name: 'New Hampshire',
@@ -293,21 +306,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'Northeast',
                 x: 3,
                 y: 10,
-                value: 10
+                value: 12,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'NM',
                 name: 'New Mexico',
                 region: 'West',
                 x: 6,
                 y: 3,
-                value: 7.50
+                value: 10.5,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'NY',
                 name: 'New York',
                 region: 'Northeast',
                 x: 2,
                 y: 9,
-                value: 11.10
+                value: 12.50,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'NC',
                 name: 'North Carolina',
@@ -328,7 +344,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'Midwest',
                 x: 3,
                 y: 8,
-                value: 8.55
+                value: 8.80,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'OK',
                 name: 'Oklahoma',
@@ -342,7 +359,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'West',
                 x: 4,
                 y: 1,
-                value: 11.25
+                value: 12
             }, {
                 'hc-a2': 'PA',
                 name: 'Pennsylvania',
@@ -356,7 +373,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'Northeast',
                 x: 2,
                 y: 11,
-                value: 10.50
+                value: 11.50
             }, {
                 'hc-a2': 'SC',
                 name: 'South Carolina',
@@ -370,7 +387,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'Midwest',
                 x: 3,
                 y: 4,
-                value: 9.10
+                value: 9.45,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'TN',
                 name: 'Tennessee',
@@ -398,7 +416,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'Northeast',
                 x: 1,
                 y: 10,
-                value: 10.77
+                value: 11.75,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'VA',
                 name: 'Virginia',
@@ -412,7 +431,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 region: 'West',
                 x: 2,
                 y: 1,
-                value: 12
+                value: 13.69,
+                className: 'new-wage'
             }, {
                 'hc-a2': 'WV',
                 name: 'West Virginia',
@@ -447,7 +467,10 @@ document.addEventListener('DOMContentLoaded', function () {
             enabled: false
         },
         tooltip: {
-            enabled: false
+            headerFormat: '',
+            pointFormat: '{point.name}: $<b>{point.value:.2f}</b>',
+            shadow: false,
+            padding: 10
         },
         responsive: {
             rules: [{
@@ -471,3 +494,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+

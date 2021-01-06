@@ -20,7 +20,6 @@ $breakpoint-lg: 717px;
   }
 }
 
-@import "css-reset";
 @import "colors";
 
 .chart-area {
@@ -58,6 +57,9 @@ $breakpoint-lg: 717px;
   & .grow-logo {
     width: 214px;
     margin-top: 20px;
+  }
+
+  .new-wage {
   }
   
 }
